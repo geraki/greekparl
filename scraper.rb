@@ -7,9 +7,9 @@ require 'open-uri'
 require 'cgi'
 require 'json'
 require 'date'
-#require 'colorize'
+require 'colorize'
 
-#require 'pry'
+require 'pry'
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
@@ -94,4 +94,4 @@ def term_from(text)
   return @TERMS[id]
 end
 
-scrape_list('http://www.hellenicparliament.gr/el/Vouleftes/Diatelesantes-Vouleftes-Apo-Ti-Metapolitefsi-Os-Simera/')
+scrape_list('http://www.hellenicparliament.gr/en/Vouleftes/Diatelesantes-Vouleftes-Apo-Ti-Metapolitefsi-Os-Simera/')
